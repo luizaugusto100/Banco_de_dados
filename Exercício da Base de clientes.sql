@@ -28,12 +28,16 @@ select * from clientes order by idade asc limit 2;
 
 #Exercício 8 – Cidades em ordem
 
-
+select distinct cidade from clientes order by cidade asc;
 
 #Exercício 9 – Visualização rápida
 
-select * from clientes order by nome asc limit 10
+select * from clientes order by nome asc limit 10;
 
 #Exercício 10 – Desafio final
 
-select nome, cidade, idade order by 
+select * from clientes where cidade = 'Rio de Janeiro' order by idade desc limit 5;
+
+select * from clientes where cidade like 'São Paulo';
+
+select * from clientes where idade = 28;
